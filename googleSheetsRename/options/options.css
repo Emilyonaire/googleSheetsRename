@@ -1,0 +1,199 @@
+button {
+  height: 30px;
+  width: 50px;
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  transition-duration: 0.4s;
+  background-color: #EFEFEF;
+}
+
+button:hover{
+  background-color: darkgrey;
+}
+
+h3{
+    display: inline;
+}
+h6{
+  visibility: hidden;
+}
+
+.hangLeft{
+  float: left;
+}
+
+.inputBox{
+  min-width: 170px;
+}
+
+.allOptions {
+  border: 5px;
+  border-color: 0 0 0 4px black;
+  border-style:solid;
+  border-radius: 15px 15px 15px 15px;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+/* DIV ALLIGNMENT */
+
+.center {
+  margin:auto;
+  width: 40%;
+  align-content: center;
+}
+.textCenter{
+  text-align: center;
+  float:none;
+}
+.left {
+  margin:auto;
+  width: 40%;
+  float: left;
+}
+.textLeft{
+  text-align: left;
+  margin:auto;
+  float: left;
+}
+.right {
+  margin:auto;
+  width: 40%;
+  float: right;
+}
+.textRight{
+  text-align: right;
+  float: right;
+}
+
+/* END DIV ALIGNMENT */
+
+
+/* animation */
+
+.status{
+  background-color: darkgrey;
+  color: darkgray;
+  
+}
+
+.popbarHold{
+  background-color: darkgray;
+  color: darkgrey;
+  animation-name: returnToBase;
+  animation-duration: 1s;
+}
+
+.popbarUnsavedIn{
+  background-color: orangered;
+  color: white;
+  animation-name: valueChangeFoundIn;
+  animation-duration: 1s;
+}
+.popbarUnsavedOut{
+  background-color: orangered;
+  color: white;
+  animation-name: valueChangeFoundOut;
+  animation-duration: 1s;
+}
+.popbarUnsavedHold{
+  background-color: orangered;
+  color: white;
+}
+
+.popbarSavedIn{
+  background-color: orangered;
+  color: orangered;
+  animation-name: saveValuesIn;
+  animation-duration: 1s;
+}
+.popbarSavedOut{
+  background-color: greenyellow;
+  color: white;
+  animation-name: saveValuesOut;
+  animation-duration: 1s;
+}
+
+@keyframes valueChangeFoundIn {
+  from {background-color: darkgray; color:darkgray;} 
+  to {background-color: orangered; color:white;}
+}
+@keyframes valueChangeFoundOut {
+  from {background-color: orangered; color:orangered;} 
+  to {background-color: orangered; color:white;}
+}
+
+@keyframes saveValuesIn {
+  from {background-color: orangered; color:white;}
+  to {background-color: orangered; color:orangered;}
+}
+@keyframes saveValuesOut {
+  from {background-color: orangered; color:orangered;}
+  to {background-color: greenyellow; color:white;}
+}
+
+@keyframes returnToBase {
+  from {background-color: greenyellow; color:white;}
+  to {background-color: darkgrey; color:darkgray;}
+}
+
+/* end animation */
+
+/* LOOOOOOOOOOONG MAN */
+.longCheck{
+  position: absolute;
+  left: 0;
+  opacity: 100;
+}
+
+.dummyToggle{
+  background-color: blue;
+}
+
+.Auto-Close{
+  width: 40%;
+  min-width: 170px;
+}
+
+.Auto-CloseA{
+  background-color: #beffbe;
+}
+.Auto-CloseA:hover{
+  background-color: darkgray;
+}
+
+.Auto-CloseB{
+  background-color: #ffbebe;
+}
+.Auto-CloseB:hover{
+  background-color:grey;
+}
+
+
+.popbar{
+  border-radius: 15px 15px 15px 15px;
+  font-size: large;
+  font-weight: bold;
+  font-style: oblique;
+  text-decoration: wavy;
+  line-height: 250%;
+}
+
+.btnTest{
+  margin:auto;
+  width: 50px;
+  float: right;
+}
+
+.btnSave{
+  margin:auto;
+  width: 50px;
+  float: left;
+}
+
+.no-wrap{
+  white-space: nowrap;
+}

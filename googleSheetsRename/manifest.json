@@ -1,0 +1,33 @@
+{
+    "name":"Google Sheets Renamer",
+    "description":"Renames the browser tab when using Google Sheets to the name of the sheet that is open",
+    "version":"1.1",
+    "manifest_version":2,
+    "background":{
+        "scripts": ["GSRBackgroundServiceWorker.js"]
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "windows"
+    ],
+    "content_scripts":[{
+        "matches":["*://docs.google.com/spreadsheets/d/*"],
+        "js": ["contentMessageTest.js"]
+    },
+    {
+        "matches":["*://*.wikipedia.org/*"],
+        "js": ["content.js"]
+    }]
+    ,
+    "icons": {
+        "32":"img/icon-postmap-32px.png",
+        "64": "img/icon-postmap-64px.png",
+        "128": "img/icon-postmap-128px.png",
+        "300": "img/icon-postmap-300px.png",
+        "600": "img/icon-postmap-600px.png"
+    },
+
+    "options_page":"options/options.html"
+}
